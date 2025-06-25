@@ -1,31 +1,32 @@
 :root {
-  --theme-color         : #684DF4;
-  --theme-color2        : #684DF4;
-  --theme-color3        : #FF8139;
-  --title-color         : #141D38;
-  --body-color          : #737887;
-  --smoke-color         : #F5F5F5;
-  --smoke-color2        : #E2E8FA;
-  --smoke-color3        : #EFF1F9;
-  --black-color         : #000000;
-  --black-color2        : #080E1C;
-  --gray-color          : #bdbdbd;
-  --white-color         : #ffffff;
-  --light-color         : #72849B;
-  --yellow-color        : #FFB539;
-  --success-color       : #28a745;
-  --error-color         : #dc3545;
-  --th-border-color     : #E0E0E0;
-  --title-font          : 'Barlow', sans-serif;
-  --body-font           : 'Roboto', sans-serif;
-  --icon-font           : "Font Awesome 6 Pro";
-  --main-container      : 1220px;
-  --container-gutters   : 24px;
-  --section-space       : 120px;
+  --theme-color: #F37021;       /* JABNET Orange (from logo) */
+  --theme-color2: #D85D13;      /* Darker shade of Orange */
+  --theme-color3: #c70d3b;      /* JABNET Black (from logo) */
+  --title-color: #1C1C1C;       /* Strong Title Black */
+  --body-color: #666666;        /* Accessible Gray */
+  --smoke-color: #F9F9F9;       /* Off-White Background */
+  --smoke-color2: #F1F1F1;      /* Light Gray Background */
+  --smoke-color3: #EAEAEA;      /* Medium Light Gray */
+  --black-color: #000000;       /* Pure Black */
+  --black-color2: #231F20;      /* JABNET Black (from logo) */
+  --gray-color: #808285;        /* JABNET Gray (from logo) */
+  --white-color: #ffffff;       /* Pure White */
+  --light-color: #999999;       /* Light Gray Text */
+  --yellow-color: #FFC107;      /* Bright Yellow for attention */
+  --success-color: #00BFA6;     /* Teal for Success */
+  --error-color: #F44336;       /* Vibrant Error Red */
+  --th-border-color: #DDDDDD;    /* Table Header Border */
+  --title-font: 'Barlow', sans-serif;
+  --body-font: 'Roboto', sans-serif;
+  --icon-font: "Font Awesome 6 Pro";
+  --main-container: 1220px;
+  --container-gutters: 24px;
+  --section-space: 120px;
   --section-space-mobile: 80px;
-  --section-title-space : 60px;
-  --ripple-ani-duration : 5s;
+  --section-title-space: 60px;
+  --ripple-ani-duration: 5s;
 }
+
 
 // Color Variation
 $theme-color          : var(--theme-color);

@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
-Template Name: Webteck
+Template Name: Jabnet
 Template URL: http://themeholy.com/html/webteck
-Description: Technology & IT Solutions HTML Template
+Description: Solusi Teknologi & IT Anda
 Author: Themeholy
 Author URI: https://themeforest.net/user/themeholy
 Version: 1.0.0
@@ -86,23 +86,23 @@ Version: 1.0.0
 /*------------------- 1.2. Function -------------------*/
 /*------------------- 1.3. Variable-------------------*/
 :root {
-  --theme-color: #F37021;       /* JABNET Orange (from logo) */
-  --theme-color2: #D85D13;      /* Darker shade of Orange */
-  --theme-color3: #231F20;      /* JABNET Black (from logo) */
-  --title-color: #1C1C1C;       /* Strong Title Black */
-  --body-color: #666666;        /* Accessible Gray */
-  --smoke-color: #F9F9F9;       /* Off-White Background */
-  --smoke-color2: #F1F1F1;      /* Light Gray Background */
-  --smoke-color3: #EAEAEA;      /* Medium Light Gray */
-  --black-color: #000000;       /* Pure Black */
-  --black-color2: #231F20;      /* JABNET Black (from logo) */
-  --gray-color: #808285;        /* JABNET Gray (from logo) */
-  --white-color: #ffffff;       /* Pure White */
-  --light-color: #999999;       /* Light Gray Text */
-  --yellow-color: #FFC107;      /* Bright Yellow for attention */
-  --success-color: #00BFA6;     /* Teal for Success */
-  --error-color: #F44336;       /* Vibrant Error Red */
-  --th-border-color: #DDDDDD;    /* Table Header Border */
+  --theme-color: #F37021;       
+  --theme-color2: #D85D13;       
+  --theme-color3: #231F20;       
+  --title-color: #1C1C1C;        
+  --body-color: #666666;        
+  --smoke-color: #F9F9F9;        
+  --smoke-color2: #F1F1F1;       
+  --smoke-color3: #EAEAEA;       
+  --black-color: #000000;       
+  --black-color2: #231F20;       
+  --gray-color: #808285;        
+  --white-color: #ffffff;       
+  --light-color: #999999;        
+  --yellow-color: #FFC107;       
+  --success-color: #00BFA6;      
+  --error-color: #F44336;        
+  --th-border-color: #DDDDDD;     
   --title-font: 'Barlow', sans-serif;
   --body-font: 'Roboto', sans-serif;
   --icon-font: "Font Awesome 6 Pro";
@@ -166,8 +166,8 @@ body.bg-dark {
 }
 
 body.theme2 {
-  --theme-color: #5484FF;
-  --theme-color2: #642CDC;
+  --theme-color: #F37021;
+  --theme-color2: #D85D13;
 }
 
 body.theme3 {
@@ -3310,7 +3310,7 @@ textarea.is-invalid {
   content: "";
   height: 10px;
   width: 100%;
-  background-image: url("data:image/svg+xml,%3Csvg width='151' height='14' viewBox='0 0 151 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 12C26.8483 4.45376 91.036 -6.11096 149 12' stroke='url(%23paint0_linear_1691_869)' stroke-width='3' stroke-linecap='round'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1691_869' x1='27.7593' y1='7.09091' x2='148.987' y2='5.79345' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%235484FF'/%3E%3Cstop offset='0.85' stop-color='%23642CDC'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg width='151' height='14' viewBox='0 0 151 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 12C26.8483 4.45376 91.036 -6.11096 149 12' stroke='url(%23paint0_linear_1691_869)' stroke-width='3' stroke-linecap='round'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1691_869' x1='27.7593' y1='7.09091' x2='148.987' y2='5.79345' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F37021'/%3E%3Cstop offset='0.85' stop-color='%23D85D13'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
   background-size: 100% 100%;
   background-repeat: repeat-x;
   position: absolute;
@@ -16915,8 +16915,8 @@ ul.comment-list .th-comment-item:first-child > .th-post-comment {
 .hero-23 .discount-wrapp .play-btn > i {
   --icon-size: 90px;
   font-size: 25px;
-  background: -webkit-linear-gradient(0.04deg, #5484FF 17.55%, #642CDC 87.6%);
-  background: linear-gradient(89.96deg, #5484FF 17.55%, #642CDC 87.6%);
+  background: -webkit-linear-gradient(0.04deg, #000000 17.55%, #000000 87.6%);
+  background: linear-gradient(89.96deg, #000000 17.55%, #000000 87.6%);
   color: var(--white-color);
 }
 
@@ -17233,7 +17233,7 @@ ul.comment-list .th-comment-item:first-child > .th-post-comment {
   content: "";
   height: 10px;
   width: 100%;
-  background-image: url("data:image/svg+xml,%3Csvg width='151' height='14' viewBox='0 0 151 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 12C26.8483 4.45376 91.036 -6.11096 149 12' stroke='url(%23paint0_linear_1691_869)' stroke-width='3' stroke-linecap='round'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1691_869' x1='27.7593' y1='7.09091' x2='148.987' y2='5.79345' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%235484FF'/%3E%3Cstop offset='0.85' stop-color='%23642CDC'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg width='151' height='14' viewBox='0 0 151 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 12C26.8483 4.45376 91.036 -6.11096 149 12' stroke='url(%23paint0_linear_1691_869)' stroke-width='3' stroke-linecap='round'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1691_869' x1='27.7593' y1='7.09091' x2='148.987' y2='5.79345' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F37021'/%3E%3Cstop offset='0.85' stop-color='%23D85D13'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
   background-size: 100% 100%;
   background-repeat: repeat-x;
   position: absolute;
@@ -22684,8 +22684,8 @@ span.select2-selection.select2-selection--single:focus {
 .discount-wrapp2 .play-btn > i {
   --icon-size: 90px;
   font-size: 25px;
-  background: -webkit-linear-gradient(0.04deg, #5484FF 17.55%, #642CDC 87.6%);
-  background: linear-gradient(89.96deg, #5484FF 17.55%, #642CDC 87.6%);
+  background: -webkit-linear-gradient(0.04deg, #F37021 17.55%, #D85D13 87.6%);
+  background: linear-gradient(89.96deg, #F37021 17.55%, #D85D13 87.6%);
   color: var(--white-color);
 }
 
@@ -32416,8 +32416,8 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .blog-box2.style5 .blog-tag {
-  background: -webkit-linear-gradient(0.04deg, #5484FF 17.55%, #642CDC 87.6%);
-  background: linear-gradient(89.96deg, #5484FF 17.55%, #642CDC 87.6%);
+  background: -webkit-linear-gradient(0.04deg, #F37021 17.55%, #D85D13 87.6%);
+  background: linear-gradient(89.96deg, #F37021 17.55%, #D85D13 87.6%);
   border: 1px solid #FFFFFF;
   border-radius: 15px;
 }
@@ -40230,8 +40230,8 @@ span.select2-selection.select2-selection--single:focus {
 .service-button .icon-btn {
   margin-left: 12px;
   border-radius: 50%;
-  background: -webkit-linear-gradient(0.04deg, #5484FF 17.55%, #642CDC 87.6%);
-  background: linear-gradient(89.96deg, #5484FF 17.55%, #642CDC 87.6%);
+  background: -webkit-linear-gradient(0.04deg, #F37021 17.55%, #D85D13 87.6%);
+  background: linear-gradient(89.96deg, #F37021 17.55%, #D85D13 87.6%);
   border: none;
   position: relative;
   z-index: 2;
@@ -44809,8 +44809,8 @@ span.select2-selection.select2-selection--single:focus {
   border-radius: 24px;
   padding: 3px 20px;
   display: inline-block;
-  background: -webkit-linear-gradient(0.04deg, #5484FF 17.55%, #642CDC 87.6%);
-  background: linear-gradient(89.96deg, #5484FF 17.55%, #642CDC 87.6%);
+  background: -webkit-linear-gradient(0.04deg, #F37021 17.55%, #D85D13 87.6%);
+  background: linear-gradient(89.96deg, #F37021 17.55%, #D85D13 87.6%);
   z-index: 2;
   /* Extra small devices */
 }
@@ -46642,8 +46642,8 @@ span.select2-selection.select2-selection--single:focus {
   height: 72px;
   line-height: 72px;
   text-align: center;
-  background: -webkit-linear-gradient(0.04deg, #5484FF 17.55%, #642CDC 87.6%);
-  background: linear-gradient(89.96deg, #5484FF 17.55%, #642CDC 87.6%);
+  background: -webkit-linear-gradient(0.04deg, #F37021 17.55%, #D85D13 87.6%);
+  background: linear-gradient(89.96deg, #F37021 17.55%, #D85D13 87.6%);
   border-radius: 16px;
   margin-bottom: 0;
   /* Extra small devices */
@@ -49085,8 +49085,8 @@ span.select2-selection.select2-selection--single:focus {
   height: 56px;
   line-height: 56px;
   text-align: center;
-  background: -webkit-linear-gradient(0.04deg, #5484FF 17.55%, #642CDC 87.6%);
-  background: linear-gradient(89.96deg, #5484FF 17.55%, #642CDC 87.6%);
+  background: -webkit-linear-gradient(0.04deg, #F37021 17.55%, #D85D13 87.6%);
+  background: linear-gradient(89.96deg, #F37021 17.55%, #D85D13 87.6%);
   position: relative;
   border-radius: 8px;
   z-index: 2;
@@ -49150,8 +49150,8 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .th-experience2 {
-  background: -webkit-linear-gradient(0.04deg, #5484FF 17.55%, #642CDC 87.6%);
-  background: linear-gradient(89.96deg, #5484FF 17.55%, #642CDC 87.6%);
+  background: -webkit-linear-gradient(0.04deg, #F37021 17.55%, #D85D13 87.6%);
+  background: linear-gradient(89.96deg, #F37021 17.55%, #D85D13 87.6%);
   border-radius: 16px;
   padding: 40px;
   position: absolute;
