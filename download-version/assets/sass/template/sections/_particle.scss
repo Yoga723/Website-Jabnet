@@ -3,13 +3,18 @@
     height: 390px;
 }
 .particle-2 {
-    max-width: 800px;
+    width: 100%;
     height: 790px;
     aspect-ratio: 16 / 14;
     &.small {
         max-width: 515px;
         height: 490px;
     }
+}
+
+.particle-2.small{
+    max-width: 515px;
+    height: 490px;
 }
 
 .particle-3 {

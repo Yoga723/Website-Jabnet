@@ -1,5 +1,5 @@
 class Footer extends HTMLElement {
-     connectedCallback() {
+  connectedCallback() {
     this.innerHTML = `
        <footer class="footer-wrapper footer-layout1">
         <div class="footer-top">
@@ -37,7 +37,6 @@ class Footer extends HTMLElement {
                                     <i class="fas fa-location-dot"></i>
                                 </div>
                                 <div class="media-body">
-                                    <span class="footer-contact_text">Pusat:</span>
                                     <a href="https://maps.app.goo.gl/8NQ2r9ZrdgLdbJWY8" target="_blank"
                                         class="footer-contact_link">Jl. Patriot No.35, Sukagalih, Kec. Tarogong
                                         Kidul</a>
@@ -62,7 +61,7 @@ class Footer extends HTMLElement {
                                             class="fab fa-facebook-f"></i></a>
                                     <a href="https://www.twitter.com/" target="_blank"><i
                                             class="fab fa-twitter"></i></a>
-                                    <!-- <a href="https://www.instagram.com/jabnet.id//" target="_blank"><i class="fab fa-linkedin-in"></i></a> -->
+                                    <!-- <a href="https://www.instagram.com/jabnet.id/" target="_blank"><i class="fab fa-linkedin-in"></i></a> -->
                                     <a href="https://www.instagram.com/jabnet.id/" target="_blank"><i
                                             class="fab fa-instagram"></i></a>
                                     <a href="https://wa.me/6282180009030" target="_blank"><i
@@ -92,11 +91,10 @@ class Footer extends HTMLElement {
                             <h3 class="widget_title">IT SERVICES</h3>
                             <div class="menu-all-pages-container">
                                 <ul class="menu">
-                                    <li><a href="service-details.html">Web Development</a></li>
-                                    <li><a href="service-details.html">Business Development</a></li>
-                                    <li><a href="service-details.html">Product Management</a></li>
-                                    <li><a href="service-details.html">UI/UX Design</a></li>
-                                    <li><a href="service-details.html">Cloud services</a></li>
+                                    <li><a href="service-details.html">Internet & Manage Service</a></li>
+                                    <li><a href="service-details.html">Cloud Manage</a></li>
+                                    <li><a href="service-details.html">Jabnet Academy</a></li>
+                                    <li><a href="service-details.html">Data Center</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -168,4 +166,4 @@ class Footer extends HTMLElement {
   }
 }
 
-customElements.define('main-footer', Footer);
+customElements.define("main-footer", Footer);
