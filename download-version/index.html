@@ -898,7 +898,7 @@ Contact Area
                         <span class="discount-anime">Hire us . Hire us . Hire us .</span>
                     </div>
                 </div> -->
-                <form method="POST" class="contact-form4 ajax-contact text-white">
+                <form class="contact-form4 ajax-contact text-white">
                     <div class="row">
                         <div class="form-group col-sm-6">
                             <input type="text" class="form-control text-white" name="name" id="name"
@@ -910,15 +910,19 @@ Contact Area
                         </div>
                         <div class="form-group col-sm-6">
                             <input type="tel" class="form-control text-white" name="whatsapp-number"
-                                id="whatsapp-number" />
+                                id="whatsapp-number" placeholder="08123456789*" />
                         </div>
                         <div class="form-group col-sm-6">
-                            <input type="text" class="form-control text-white" name="budget" id="budget"
-                                placeholder="Apa paket yang anda pilih" />
+                            <select name="paket-internet" id="paket-internet">
+                                    <option value="" disabled> Pilih Paket*</option>
+                                    <option value="Paket Moon 189K">Paket Moon 189K</option>
+                                    <option value="Paket Light 259K">Paket Light 259K</option>
+                                    <option value="Paket Stars 359K">Paket Stars 359K</option>
+                            </select>
                         </div>
                         <div class="form-group col-12">
-                            <textarea name="message" id="message" cols="30" rows="3" class="form-control text-white"
-                                placeholder="Tulis Pesanmu disini*"></textarea>
+                            <textarea name="address" id="address" cols="30" rows="3" class="form-control text-white"
+                                placeholder="Masukkan Alamat Anda Disini*"></textarea>
                         </div>
                         <div class="form-btn col-12">
                             <button class="th-btn btn-gradient2 style-radius" id="submit-button"
@@ -1397,9 +1401,9 @@ Blog Area
     <!-- Whatsapp Handler -->
     <script src="assets/js/whatsapp-handler.js"></script>
     <!-- International Phone Number -->
-    <script src="assets/js/vendor/international-phone-number/intlTelInput.min.js"></script>
+    <!-- <script src="assets/js/vendor/international-phone-number/intlTelInput.min.js"></script> -->
     <!-- International Phone Number -->
-    <script src="assets/js/vendor/international-phone-number/script.js"></script>
+    <!-- <script src="assets/js/vendor/international-phone-number/script.js"></script> -->
     <!-- Mekari Qontak Handler -->
     <script src="assets/js/components/script-qontak.js"></script>
     <!-- Jquery -->

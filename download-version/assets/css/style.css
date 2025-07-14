@@ -210,7 +210,7 @@ body.bg-como {
 
 iframe {
   border: none;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .slick-slide:focus,
