@@ -2,7 +2,7 @@
 /*
 Template Name: Jabnet
 Template URL: http://themeholy.com/html/webteck
-Description: Provider Internet & Solusi IT Terbaik di Garut
+Description: Solusi Teknologi & IT Anda
 Author: Themeholy
 Author URI: https://themeforest.net/user/themeholy
 Version: 1.0.0
@@ -206,6 +206,11 @@ body.theme8 {
 
 body.bg-como {
   --theme-color: #407360;
+}
+
+iframe {
+  border: none;
+  width: 100%;
 }
 
 .slick-slide:focus,
@@ -50465,10 +50470,3 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 /*# sourceMappingURL=style.css.map */
-#qontak-webchat-widget {
-    height: 94px !important;
-    width: 94px !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    display: block !important;
-}
