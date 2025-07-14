@@ -208,11 +208,6 @@ body.bg-como {
   --theme-color: #407360;
 }
 
-/* iframe {
-  border: none;
-  width: 100%;
-} */
-
 .slick-slide:focus,
 button:focus,
 a:focus,
@@ -50470,3 +50465,10 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 /*# sourceMappingURL=style.css.map */
+#qontak-webchat-widget {
+    height: 94px !important;
+    width: 94px !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: block !important;
+}
