@@ -16,14 +16,14 @@ class HeaderMobile extends HTMLElement {
                     </li>
                     <li><a href="pricing.html">Paket Internet</a></li>
                     <li class="menu-item-has-children">
-                        <a href="#">Services</a>
+                        <a href="#">Layanan</a>
                         <ul class="sub-menu">
-                            <li><a href="service.html">Services</a></li>
-                            <li><a href="service-details.html">Services Details</a></li>
+                            <li><a href="layanan.html">List Layanan</a></li>
+                            <li><a href="service-details.html">Layanan Details</a></li>
                         </ul>
                     </li>
                     <li class="menu-item-has-children">
-                        <a href="#">Pages</a>
+                        <a href="#">Halaman</a>
                         <ul class="sub-menu">
                             <!-- <li class="menu-item-has-children">
                                 <a href="#">Shop</a>
@@ -46,7 +46,7 @@ class HeaderMobile extends HTMLElement {
                         <a href="blog.html">Blog</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact Us</a>
+                        <a href="kontak.html">Kontak Kami</a>
                     </li>
                     <li><a href="about.html">About Us</a></li>
                 </ul>

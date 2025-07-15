@@ -19,7 +19,7 @@ class Footer extends HTMLElement {
                                     <i class="fas fa-phone"></i>
                                 </div>
                                 <div class="media-body">
-                                    <span class="footer-contact_text">Quick Call Us:</span>
+                                    <span class="footer-contact_text">Hubungi Kami:</span>
                                     <a href="https://wa.me/6282180009030" class="footer-contact_link">0821-8000-9030</a>
                                 </div>
                             </div>
@@ -28,7 +28,7 @@ class Footer extends HTMLElement {
                                     <i class="fas fa-envelope"></i>
                                 </div>
                                 <div class="media-body">
-                                    <span class="footer-contact_text">Mail Us On:</span>
+                                    <span class="footer-contact_text">Kirim Kami Email:</span>
                                     <a href="mailto:info@jabnet.id" class="footer-contact_link">info@jabnet.id
                                 </div>
                             </div>
@@ -81,20 +81,21 @@ class Footer extends HTMLElement {
                                     <li><a href="team.html" target="_blank">Meet Our Team</a></li>
                                     <li><a href="project.html" target="_blank">Our Projects</a></li>
                                     <li><a href="faq.html" target="_blank">Help & FAQs</a></li>
-                                    <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                                    <li><a href="kontak.html" target="_blank">Kontak Kami</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-xl-auto">
                         <div class="widget widget_nav_menu footer-widget">
-                            <h3 class="widget_title">IT SERVICES</h3>
+                            <h3 class="widget_title">List Layanan</h3>
                             <div class="menu-all-pages-container">
                                 <ul class="menu">
-                                    <li><a href="service-details.html">Internet & Manage Service</a></li>
-                                    <li><a href="service-details.html">Cloud Manage</a></li>
-                                    <li><a href="service-details.html">Jabnet Academy</a></li>
-                                    <li><a href="service-details.html">Data Center</a></li>
+                                    <li><a href="layanan-internet.html">Layanan Jasa Koneksi Internet</a></li>
+                                    <li><a href="layanan-maintenance.html">Maintenance Service</a></li>
+                                    <li><a href="layanan-cloud-manage.html">Cloud Management</a></li>
+                                    <li><a href="layanan-data-center.html">Data Center</a></li>
+                                    <li><a href="layanan-academy.html">Jab Academy</a></li>
                                 </ul>
                             </div>
                         </div>

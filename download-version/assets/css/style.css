@@ -3211,7 +3211,7 @@ textarea.is-invalid {
 .scroll-top {
   position: fixed;
   right: 30px;
-  bottom: 30px;
+  bottom: 150px;
   height: 50px;
   width: 50px;
   cursor: pointer;
@@ -50470,3 +50470,62 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* STYLE UNTUK INDIKATOR FORM BERLANGGANAN */
+
+.form-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transition: opacity 0.4s ease-in-out;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+}
+
+/* Tampilkan overlay saat memiliki class 'show' */
+.form-overlay.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Konten di dalam overlay */
+.form-overlay-content {
+    text-align: center;
+    color: white;
+}
+
+.form-overlay-content p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 20px;
+    color: white;
+}
+
+/* Animasi Loader (Spinner) */
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db; /* Warna biru untuk loader */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+/* Sembunyikan loader secara default */
+.loader.hidden {
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
