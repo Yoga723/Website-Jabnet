@@ -700,7 +700,7 @@
         const formData = new FormData(subscriptionForm);
 
         // 2. Kirim data ke mail.php menggunakan Fetch API
-        fetch("mail.php", {
+        fetch("/mail.php", {
           method: "POST",
           body: formData,
         })
