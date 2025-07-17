@@ -585,91 +585,91 @@
   }
 
   /*----------- 09. Ajax Contact Form ----------*/
-//   var form = ".ajax-contact";
-//   var invalidCls = "is-invalid";
-//   var $email = '[name="email"]';
-//   var $validation = '[name="name"],[name="email"],[name="whatsapp-number"],[name="paket-internet"],[name="address"]'; // Must be use (,) without any space
-//   var formMessages = $(".form-messages");
+  //   var form = ".ajax-contact";
+  //   var invalidCls = "is-invalid";
+  //   var $email = '[name="email"]';
+  //   var $validation = '[name="name"],[name="email"],[name="whatsappNumber"],[name="paketInternet"],[name="address"]'; // Must be use (,) without any space
+  //   var formMessages = $(".form-messages");
 
-//   function sendContact() {
-//     var formData = $(form).serialize();
-//     var valid;
-//     valid = validateContact();
-//     if (valid) {
-//       jQuery
-//         .ajax({
-//           url: $(form).attr("action"),
-//           data: formData,
-//           type: "POST",
-//         })
-//         .done(function (response) {
-//           // Make sure that the formMessages div has the 'success' class.
-//           formMessages.removeClass("error");
-//           formMessages.addClass("success");
-//           // Set the message text.
-//           formMessages.text(response);
-//           // Clear the form.
-//           $(form + ' input:not([type="submit"]),' + form + " textarea").val("");
-//         })
-//         .fail(function (data) {
-//           // Make sure that the formMessages div has the 'error' class.
-//           formMessages.removeClass("success");
-//           formMessages.addClass("error");
-//           // Set the message text.
-//           if (data.responseText !== "") {
-//             formMessages.html(data.responseText);
-//           } else {
-//             formMessages.html("Oops! An error occured and your message could not be sent.");
-//           }
-//         });
-//     }
-//   }
+  //   function sendContact() {
+  //     var formData = $(form).serialize();
+  //     var valid;
+  //     valid = validateContact();
+  //     if (valid) {
+  //       jQuery
+  //         .ajax({
+  //           url: $(form).attr("action"),
+  //           data: formData,
+  //           type: "POST",
+  //         })
+  //         .done(function (response) {
+  //           // Make sure that the formMessages div has the 'success' class.
+  //           formMessages.removeClass("error");
+  //           formMessages.addClass("success");
+  //           // Set the message text.
+  //           formMessages.text(response);
+  //           // Clear the form.
+  //           $(form + ' input:not([type="submit"]),' + form + " textarea").val("");
+  //         })
+  //         .fail(function (data) {
+  //           // Make sure that the formMessages div has the 'error' class.
+  //           formMessages.removeClass("success");
+  //           formMessages.addClass("error");
+  //           // Set the message text.
+  //           if (data.responseText !== "") {
+  //             formMessages.html(data.responseText);
+  //           } else {
+  //             formMessages.html("Oops! An error occured and your message could not be sent.");
+  //           }
+  //         });
+  //     }
+  //   }
 
-//   $(form).on("submit", function (element) {
-//     element.preventDefault();
-//     sendContact();
-//   });
+  //   $(form).on("submit", function (element) {
+  //     element.preventDefault();
+  //     sendContact();
+  //   });
 
   document.addEventListener("DOMContentLoaded", function () {
     const orderButtons = document.querySelectorAll('.price-card .th-btn[href="#contact-sec"]');
-    const paketDropdown = document.getElementById('paket-internet');
-    const contactSection = document.getElementById('contact-sec');
+    const paketDropdown = document.getElementById("paketInternet");
+    const contactSection = document.getElementById("contact-sec");
 
     // Cek semua elemen yang dibutuhkan ada di halaman
     if (orderButtons.length > 0 && paketDropdown && contactSection) {
-        orderButtons.forEach(button => {
-            button.addEventListener('click', function(e) {
-                e.preventDefault();
+      orderButtons.forEach((button) => {
+        button.addEventListener("click", function (e) {
+          e.preventDefault();
 
-                // 1. Ambil nama paket dari judul kartu harga
-                const priceCard = this.closest('.price-card');
-                const titleElement = priceCard.querySelector('.price-card_title');
-                const packageTitle = titleElement ? titleElement.textContent.trim() : ''; // Contoh: "Paket Moon"
+          // 1. Ambil nama paket dari judul kartu harga
+          const priceCard = this.closest(".price-card");
+          const titleElement = priceCard.querySelector(".price-card_title");
+          const packageTitle = titleElement ? titleElement.textContent.trim() : ""; // Contoh: "Paket Moon"
 
-                if (packageTitle) {
-                    // 2. Cari dan pilih opsi yang sesuai di dropdown
-                    const options = paketDropdown.options;
-                    for (let i = 0; i < options.length; i++) {
-                        if (options[i].text.startsWith(packageTitle)) {
-                            paketDropdown.value = options[i].value;
-                            break; 
-                        }
-                    }
-                }
+          if (packageTitle) {
+            // 2. Cari dan pilih opsi yang sesuai di dropdown
+            const options = paketDropdown.options;
+            for (let i = 0; i < options.length; i++) {
+              if (options[i].text.startsWith(packageTitle)) {
+                paketDropdown.value = options[i].value;
+                break;
+              }
+            }
+          }
 
-                // 3. Gulir halaman dengan mulus ke bagian form
-                // Menghitung posisi scroll dengan memperhitungkan tinggi header yang menempel (sticky)
-                const header = document.querySelector('.th-header, .sticky-header');
-                const headerHeight = header ? header.offsetHeight : 90; // Fallback tinggi header
-                const elementPosition = contactSection.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.scrollY - headerHeight;
+          // 3. Gulir halaman dengan mulus ke bagian form
+          // Menghitung posisi scroll dengan memperhitungkan tinggi header yang menempel (sticky)
+          const header = document.querySelector(".th-header, .sticky-header");
+          const headerHeight = header ? header.offsetHeight : 90; // Fallback tinggi header
+          const elementPosition = contactSection.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.scrollY - headerHeight;
 
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
-            });
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
         });
+      });
     }
 
     const subscriptionForm = document.getElementById("form-berlangganan");
@@ -699,8 +699,10 @@
 
         const formData = new FormData(subscriptionForm);
 
+        console.log("THIS IS FORM DATA:", formData);
+
         // 2. Kirim data ke mail.php menggunakan Fetch API
-        fetch("/mail.php", {
+        fetch("https://jabnet.id/backend/email", {
           method: "POST",
           body: formData,
         })

@@ -14,8 +14,8 @@ $name = isset($_POST['name']) ? strip_tags(trim($_POST['name'])) : '';
 $email = isset($_POST['email']) ? filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL) : '';
 
 // Field spesifik untuk form Berlangganan
-$whatsapp = isset($_POST['whatsapp-number']) ? strip_tags(trim($_POST['whatsapp-number'])) : '';
-$paket = isset($_POST['paket-internet']) ? strip_tags(trim($_POST['paket-internet'])) : '';
+$whatsapp = isset($_POST['whatsappNumber']) ? strip_tags(trim($_POST['whatsappNumber'])) : '';
+$paket = isset($_POST['paketInternet']) ? strip_tags(trim($_POST['paketInternet'])) : '';
 $address = isset($_POST['address']) ? strip_tags(trim($_POST['address'])) : '';
 
 // Field spesifik untuk form Pertanyaan
