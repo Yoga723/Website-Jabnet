@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     setTimeout(() => {
                         overlay.classList.remove('show');
                         subscriptionForm.reset();
-                    }, 3000); // Overlay hilang setelah 3 detik
+                    }, 3000);
                 } else {
                     // Jika gagal
                     overlayText.textContent = 'Gagal! ' + data.message;

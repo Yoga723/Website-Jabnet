@@ -74,7 +74,7 @@ class Header extends HTMLElement {
                                     <li>
                                         <a href="kontak.html">Kontak Kami</a>
                                     </li>
-                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="about.html">Tentang Kami</a></li>
                                 </ul>
                             </nav>
                             <div class="header-button">

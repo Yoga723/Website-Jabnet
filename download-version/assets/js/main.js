@@ -625,40 +625,6 @@
 //     }
 //   }
 
-//   function validateContact() {
-//     var valid = true;
-//     var formInput;
-
-//     function unvalid($validation) {
-//       $validation = $validation.split(",");
-//       for (var i = 0; i < $validation.length; i++) {
-//         formInput = form + " " + $validation[i];
-//         if (!$(formInput).val()) {
-//           $(formInput).addClass(invalidCls);
-//           valid = false;
-//         } else {
-//           $(formInput).removeClass(invalidCls);
-//           valid = true;
-//         }
-//       }
-//     }
-//     unvalid($validation);
-
-//     if (
-//       !$($email).val() ||
-//       !$($email)
-//         .val()
-//         .match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)
-//     ) {
-//       $($email).addClass(invalidCls);
-//       valid = false;
-//     } else {
-//       $($email).removeClass(invalidCls);
-//       valid = true;
-//     }
-//     return valid;
-//   }
-
 //   $(form).on("submit", function (element) {
 //     element.preventDefault();
 //     sendContact();
@@ -684,10 +650,9 @@
                     // 2. Cari dan pilih opsi yang sesuai di dropdown
                     const options = paketDropdown.options;
                     for (let i = 0; i < options.length; i++) {
-                        // Mencocokkan jika teks opsi dimulai dengan judul paket
                         if (options[i].text.startsWith(packageTitle)) {
                             paketDropdown.value = options[i].value;
-                            break; // Hentikan loop jika sudah ketemu
+                            break; 
                         }
                     }
                 }
@@ -728,7 +693,6 @@
       subscriptionForm.addEventListener("submit", function (e) {
         e.preventDefault(); // Mencegah form refresh halaman
 
-        console.log("FORM IS BEING SENT")
         // 1. Tampilkan overlay "Loading"
         hideAllOverlays();
         overlayLoading.classList.remove("d-none");
@@ -740,7 +704,7 @@
           method: "POST",
           body: formData,
         })
-          .then((response) => response.json()) // Ubah response menjadi format JSON
+          .then((response) => response.json())
           .then((data) => {
             hideAllOverlays(); // Sembunyikan loading overlay
             if (data.success) {
@@ -760,7 +724,6 @@
           });
       });
 
-      // Tambahkan event listener untuk semua tombol "Close"
       closeButtons.forEach((button) => {
         button.addEventListener("click", () => {
           hideAllOverlays();

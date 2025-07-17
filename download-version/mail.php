@@ -28,7 +28,7 @@ $message = isset($_POST['message']) ? strip_tags(trim(string: $_POST['message'])
 $is_inquiry_form = !empty($subjek);
 
 // --- Konfigurasi dasar email ---
-$recipient = "info@jabnet.id"; // Ganti dengan email tujuan Anda
+$recipient = "support@jabnet.id"; // Ganti dengan email tujuan Anda
 $subject = "";
 $email_content = "";
 $email_headers = "From: " . $name . " <" . $email . ">";
