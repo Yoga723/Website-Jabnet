@@ -698,13 +698,18 @@
         overlayLoading.classList.remove("d-none");
 
         const formData = new FormData(subscriptionForm);
-
-        console.log("THIS IS FORM DATA:", formData);
+        const data = {};
+        formData.forEach((value, key) => {
+          data[key] = value;
+        });
 
         // 2. Kirim data ke mail.php menggunakan Fetch API
         fetch("https://jabnet.id/backend/email", {
           method: "POST",
-          body: formData,
+          body: JSON.stringify(data),
+          headers: {
+            "Content-type": "application/json",
+          },
         })
           .then((response) => response.json())
           .then((data) => {

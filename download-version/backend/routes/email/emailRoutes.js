@@ -33,6 +33,10 @@ router.post("/", (req, res) => {
       user: process.env.MAIL_USER || "goblogbantuan002@gmail.com",
       pass: process.env.MAIL_PASS || "Goblog002",
     },
+    tls: {
+      rejectUnauthorized: false,
+    },
+    connectionTimeout: 30000,
   });
 
   const mailOptions = {
@@ -44,9 +48,19 @@ router.post("/", (req, res) => {
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      console.error("Email error:", error);
+      const timestamp = new Date().toISOString();
+      const logMessage = `[${timestamp}] EMAIL ERROR: ${error.toString()}\n`;
+
+      // Log ke console dan file
+      console.error(logMessage);
+      fs.appendFileSync("email_error.log", logMessage);
+
       return res.status(500).json({ success: false, message: "Gagal mengirim email" });
     }
+
+    const logMessage = `[${new Date().toISOString()}] EMAIL SENT to ${mailOptions.to}\n`;
+    fs.appendFileSync("email_success.log", logMessage);
+
     res.status(200).json({ success: true, message: "Email berhasil dikirim!" });
   });
 });

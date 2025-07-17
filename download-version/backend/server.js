@@ -8,6 +8,7 @@ require("dotenv").config();
 const apiRouter = require("./routes/index");
 const app = express();
 
+app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -15,7 +16,7 @@ const PORT = process.env.PORT || 4011;
 
 const corsOptions = {
   origin: true,
-  method: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+      method: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization", "mode", "X-Requested-With"],
   exposedHeaders: ["Set-Cookie"],
   optionsSuccessStatus: 200,
