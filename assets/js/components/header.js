@@ -1,5 +1,5 @@
 class Header extends HTMLElement {
-     connectedCallback() {
+  connectedCallback() {
     this.innerHTML = `
       <header class="th-header header-layout1">
         <div class="header-top">
@@ -45,17 +45,17 @@ class Header extends HTMLElement {
                                     </li>
                                     <li><a href="/pricing.html">Paket</a></li>
                                     <li class="menu-item-has-children">
-                                        <a href="#">Layanan</a>
+                                        <a href="#" disabled>Layanan</a>
                                         <ul class="sub-menu">
-                                            <li><a href="/layanan.html">List Layanan</a></li>
-                                            <li><a href="/layanan-internet.html">Layanan Jasa Koneksi Internet</a></li>
+                                            <li><a href="/layanan">List Layanan</a></li>
+                                            <li><a href="/layanan/layanan-internet.html">Layanan Jasa Koneksi Internet</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="#">Halaman</a>
+                                        <a href="#" disabled>Halaman</a>
                                         <ul class="sub-menu">
                                             <!-- <li class="menu-item-has-children">
-                                                <a href="#">Shop</a>
+                                                <a href="#" disabled>Shop</a>
                                                 <ul class="sub-menu">
                                                     <li><a href="/shop.html">Shop</a></li>
                                                     <li><a href="/shop-details.html">Shop Details</a></li>
@@ -65,8 +65,10 @@ class Header extends HTMLElement {
                                             </li> -->
                                             <li><a href="/team/team.html">Team</a></li>
                                            <li><a href="/projects/project.html">Project</a></li>
-                                            <li><a href="/gallery.html">Gallery</a></li>
-                                            <li><a href="/faq.html">Faq Page</a></li>
+                                           <li><a href="/faq.html">Faq Page</a></li>
+                                           <li><a href="/syarat-ketentuan.html">Syarat & Ketentuan</a></li>
+                                           <!-- <li><a href="/faq.html">Kebijakan Privasi</a></li> -->
+                                           <li><a href="/gallery.html">Gallery</a></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -95,4 +97,4 @@ class Header extends HTMLElement {
   }
 }
 
-customElements.define('main-header', Header);
+customElements.define("main-header", Header);

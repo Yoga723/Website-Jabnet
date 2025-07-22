@@ -50512,12 +50512,13 @@ span.select2-selection.select2-selection--single:focus {
 /* Animasi Loader (Spinner) */
 .loader {
     border: 8px solid #f3f3f3;
-    border-top: 8px solid #3498db; /* Warna biru untuk loader */
-    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    /*Warnabiruuntukloader*/border-radius: 50%;
     width: 60px;
     height: 60px;
     animation: spin 1s linear infinite;
     margin: 0 auto;
+    -webkit-animation: spin 1s linear infinite;
 }
 
 /* Sembunyikan loader secara default */

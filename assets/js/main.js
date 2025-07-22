@@ -717,7 +717,6 @@
             if (data.success) {
               // 3. Jika SUKSES, tampilkan overlay success
               overlaySuccess.classList.remove("d-none");
-              subscriptionForm.reset(); // Kosongkan field form
             } else {
               // 4. Jika GAGAL dari server, tampilkan overlay failed
               overlayFailed.classList.remove("d-none");

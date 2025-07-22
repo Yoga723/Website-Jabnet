@@ -1,52 +1,82 @@
 const whatsappUtama = "6282180009030";
-const whatsappBroadcast = "";
 
 const handleFormSubmit = () => {
-  // --- 1. Get Input Values ---
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const phone = iti.getNumber();
-  const budget = document.getElementById("budget").value;
-  const message = document.getElementById("message").value;
+  // --- 1. Get Input Values (Common to Both Forms) ---
+  const name = document.getElementById("name")?.value.trim();
+  const email = document.getElementById("email")?.value.trim();
+  const phone = document.getElementById("whatsappNumber")?.value.trim();
+  const subjek = document.getElementById("subjek")?.value;
+  const message = document.getElementById("message")?.value.trim();
+  // These are only present on subscription form
+  const paket = document.getElementById("paketInternet")?.value;
+  const address = document.getElementById("address")?.value.trim();
+
   const formMessages = document.getElementById("form-messages");
 
-  console.log("THIS IS RESPONSES", name, email, phone, message);
+  // --- 2. Determine Form Type ---
+  const isInquiryForm = subjek && subjek.trim() !== "";
 
-  // --- 2. Basic Validation ---
-  if (!name || !email || !phone || !message) {
-    formMessages.innerHTML = '<span class="text-red-500">Please fill out all required fields (*).</span>';
-    return; // Stop the function if validation fails
+  // --- 3. Validation ---
+  const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  let isValid = false;
+
+  if (isInquiryForm) {
+    console.log("log input :", phone);
+    console.log("log input :", subjek);
+    console.log("log input :", message);
+    isValid = name && isValidEmail && phone && subjek && message;
+  } else {
+    isValid = name && isValidEmail && phone && paket && address;
+  }
+  console.log("STAGE 4 FORM");
+
+  if (!isValid) {
+    if (formMessages) {
+      formMessages.innerHTML = '<span class="text-red-500">Mohon lengkapi semua kolom yang wajib diisi.</span>';
+    }
+    return;
   }
 
-  // --- 3. Construct the WhatsApp Message ---
-  const greeting = "Salam Hangat, Saya melihat *Website Jabnet* dan tertarik untuk .";
-
-  // Using encodeURIComponent to safely handle special characters in the URL
+  console.log("STAGE 5 FORM");
+  // --- 4. Build WhatsApp Message ---
+  const greetingWithSubject = `Salam hangat, saya melihat *Website JABNET* dan ingin membahas mengenai subjek ${subjek}:\n`;
+  const greetingSubscribe = `Salam hangat, saya melihat *Website JABNET* dan tertarik dengan ${paket}:\n`;
+  
   const formattedMessage = encodeURIComponent(
-    `${greeting}\n\n` +
-      `*Nama Lengkap*: ${name}\n` +
-      `*Email*: ${email}\n` +
-      `*No. WhatsApp*: ${phone}\n` +
-      `*Budget*: ${budget || "N/A"}\n\n` +
-      `*Pesan*:\n${message}`
+    isInquiryForm
+      ? `${greetingWithSubject}\n` +
+          `*Nama*: ${name}\n` +
+          `*Email*: ${email}\n` +
+          `*Nomor WhatsApp*: ${phone}\n` +
+          `*Subjek*: ${subjek}\n` +
+          `*Pesan*:\n${message}`
+      : `${greetingSubscribe}\n` +
+          `*Nama*: ${name}\n` +
+          `*Email*: ${email}\n` +
+          `*Nomor WhatsApp*: ${phone}\n` +
+          `*Paket Pilihan*: ${paket}\n` +
+          `*Alamat*: ${address}`
   );
 
-  // --- 4. Detect Device and Create URL ---
-  let waLink = "https://web.whatsapp.com/send";
-
-  // Check if the user is on a mobile device
-  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
-    waLink = "whatsapp://send";
-
-  // The final URL
+  // --- 5. Create WhatsApp Link ---
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  const waLink = isMobile ? "whatsapp://send" : "https://web.whatsapp.com/send";
   const whatsappURL = `${waLink}?phone=${whatsappUtama}&text=${formattedMessage}`;
 
-  // --- 5. Open WhatsApp and Provide Feedback ---
-  // Open the link in a new tab
+  console.log("STAGE 7 FORM");
+  // --- 6. Open WhatsApp in New Tab ---
   window.open(whatsappURL, "_blank");
-  formMessages.innerHTML = '<span class="text-green-500">Redirecting to WhatsApp... Message sent!</span>';
+  console.log("STAGE 8 FORM");
+
+  // --- 7. Show WhatsApp Success Overlay ---
+  const successOverlay = document.getElementById("form-overlay-success-whatsapp");
+  if (successOverlay) {
+    successOverlay.classList.remove("d-none");
+  }
 };
 
-document.getElementById("submit-button").addEventListener("click", () => {
+// --- 8. Bind Click to Button ---
+document.getElementById("submit-button-whatsapp")?.addEventListener("click", (e) => {
+  e.preventDefault(); // Prevent form submission
   handleFormSubmit();
 });

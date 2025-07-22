@@ -77,10 +77,10 @@ class Footer extends HTMLElement {
                             <h3 class="widget_title">Quick Links</h3>
                             <div class="menu-all-pages-container">
                                 <ul class=" ">
-                                    <li><a href="../about.html" target="_blank">About Us</a></li>
-                                    <li><a href="../team/team.html" target="_blank">Meet Our Team</a></li>
-                                    <li><a href="../project.html" target="_blank">Our Projects</a></li>
-                                    <li><a href="../faq.html" target="_blank">Help & FAQs</a></li>
+                                    <li><a href="../about.html" target="_blank">Tentang Kami</a></li>
+                                    <li><a href="../team/team.html" target="_blank">Tim JABNET</a></li>
+                                    <li><a href="../project.html" target="_blank">Project JABNET</a></li>
+                                    <li><a href="../faq.html" target="_blank">Bantuan & FAQs</a></li>
                                     <li><a href="../kontak.html" target="_blank">Kontak Kami</a></li>
                                 </ul>
                             </div>
@@ -106,7 +106,7 @@ class Footer extends HTMLElement {
                             <div class="recent-post-wrap">
                                 <div class="recent-post">
                                     <div class="media-img">
-                                        <a href="../blog-krisna-beach-hotel.html" target="_blank"><img loading="lazy" src="../assets/img/blog/1x1/blog-krisna-1x0.8.webp"
+                                        <a href="../blog-krisna-beach-hotel.html" target="_blank"><img loading="lazy" src="/assets/img/blog/1x1/blog-krisna-1x0.8.webp"
                                                 alt="Blog Image"></a>
                                     </div>
                                     <div class="media-body">
@@ -121,7 +121,7 @@ class Footer extends HTMLElement {
                                 
                                 <div class="recent-post">
                                     <div class="media-img">
-                                        <a href="../blog-pelatihan-mtcna.html" target="_blank"><img loading="lazy" src="../assets/img/blog/1x1/blog-mtcna.webp"
+                                        <a href="../blog-pelatihan-mtcna.html" target="_blank"><img loading="lazy" src="/assets/img/blog/1x1/blog-mtcna.webp"
                                                 alt="Blog Image"></a>
                                     </div>
                                     <div class="media-body">
@@ -147,9 +147,8 @@ class Footer extends HTMLElement {
                     <div class="col-lg-6 text-end d-none d-lg-block">
                         <div class="footer-links">
                             <ul>
-                                <li><a href="../about.html">Terms & Condition</a></li>
-                                <li><a href="../about.html">Careers</a></li>
-                                <li><a href="../about.html">Privacy Policy</a></li>
+                                <li><a href="../syarat-ketentuan.html">Syarat & Ketentuan</a></li>
+                                <li><a href="../kebijakan-privasi.html">Kebijakan Privasi</a></li>
                             </ul>
                         </div>
                     </div>

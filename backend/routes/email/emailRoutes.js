@@ -3,6 +3,20 @@ const router = express.Router();
 const nodemailer = require("nodemailer");
 // const fs = require("fs");
 
+const transporter = nodemailer.createTransport({
+  host: "smtp.gmail.com",
+  port: 465,
+  secure: true,
+  auth: {
+    user: process.env.MAIL_JABNET || "testing@jabnet.id",
+    pass: process.env.MAIL_PASS || "",
+  },
+  tls: {
+    rejectUnauthorized: false,
+  },
+  connectionTimeout: 30000,
+});
+
 router.post("/", (req, res) => {
   // const now = new Date().toLocaleString("id-ID");
   const { name, email, whatsappNumber, paketInternet, address, subjek, message } = req.body;
@@ -26,23 +40,10 @@ router.post("/", (req, res) => {
     ? `Nama: ${name}\nEmail: ${email}\nWhatsApp: ${whatsappNumber}\nSubjek: ${subjek}\nPesan:\n${message}`
     : `Nama: ${name}\nEmail: ${email}\nWhatsApp: ${whatsappNumber}\nPaket: ${paketInternet}\nAlamat:\n${address}`;
 
-  const transporter = nodemailer.createTransport({
-    host: "jabnet.id",
-    port: 465,
-    secure: true,
-    auth: {
-      user: process.env.MAIL_USER || "testing@jabnet.id",
-      pass: process.env.MAIL_PASS || "Galon@12345",
-    },
-    tls: {
-      rejectUnauthorized: false,
-    },
-    connectionTimeout: 30000,
-  });
-
   const mailOptions = {
-    from: `"${name}" <${email}>`,
-    to: "support@jabnet.id",
+    from: `"${name}" <${process.env.MAIL_JABNET}>`, 
+    replyTo: email, // so replies go to the visitor
+    to: process.env.MAIL_JABNET,
     subject,
     text: body,
   };
@@ -51,8 +52,6 @@ router.post("/", (req, res) => {
     if (error) {
       const timestamp = new Date().toISOString();
       const logMessage = `[${timestamp}] EMAIL ERROR: ${error.toString()}\n`;
-
-      // Log ke console dan file
 
       return res.status(500).json({ success: false, message: "Gagal mengirim email" });
     }

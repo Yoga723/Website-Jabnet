@@ -16,17 +16,17 @@ class HeaderMobile extends HTMLElement {
                     </li>
                     <li><a href="pricing.html">Paket Internet</a></li>
                     <li class="menu-item-has-children">
-                        <a href="#">Layanan</a>
+                        <a href="#" disabled>Layanan</a>
                         <ul class="sub-menu">
-                            <li><a href="layanan.html">List Layanan</a></li>
-                            <li><a href="service-details.html">Layanan Details</a></li>
+                            <li><a href="/layanan">List Layanan</a></li>
+                            <li><a href="/layanan/layanan-internet.html">Layanan Jasa Koneksi Internet</a></li>
                         </ul>
                     </li>
                     <li class="menu-item-has-children">
-                        <a href="#">Halaman</a>
+                        <a href="#" disabled>Halaman</a>
                         <ul class="sub-menu">
                             <!-- <li class="menu-item-has-children">
-                                <a href="#">Shop</a>
+                                <a href="#" disabled>Shop</a>
                                 <ul class="sub-menu">
                                     <li><a href="shop.html">Shop</a></li>
                                     <li><a href="shop-details.html">Shop Details</a></li>
