@@ -8,12 +8,12 @@ class Footer extends HTMLElement {
                 <div class="row align-items-center">
                     <div class="col-xl-3">
                         <div class="footer-logo">
-                            <a class="icon-masking" href="../index.html"><img src="/assets/img/jabnet-logo-dark.webp"
+                            <a class="icon-masking" href="../index.html"><img src="/assets/img/jabnet-Logo-white.webp"
                                     height="194" width="194" alt="Jabnet"></a>
                         </div>
                     </div>
                     <div class="col-xl-9">
-                        <div class="footer-contact-wrap gap-3">
+                        <div class="footer-contact-wrap gap-3 my-3">
                             <div class="footer-contact">
                                 <div class="footer-contact_icon">
                                     <i class="fas fa-phone"></i>

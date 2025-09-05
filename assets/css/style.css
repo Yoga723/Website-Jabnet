@@ -103,8 +103,8 @@ Version: 1.0.0
   --success-color: #00BFA6;      
   --error-color: #F44336;        
   --th-border-color: #DDDDDD;     
-  --title-font: 'Barlow', sans-serif;
-  --body-font: 'Roboto', sans-serif;
+  --title-font: url('/assets/fonts/fontawesome/RecklessNeue-Light.ttf') format('ttf') sans-serif;
+  --body-font: url('/assets/fonts/fontawesome/RecklessNeue-Light.ttf') format('ttf') sans-serif;
   --icon-font: "Font Awesome 6 Pro";
   --main-container: 1220px;
   --container-gutters: 24px;
@@ -124,6 +124,7 @@ body {
   font-family: var(--title-font);
   font-size: 16px;
   font-weight: 400;
+  background-color: #eeeeee;
   color: var(--body-color);
   line-height: 26px;
   overflow-x: hidden;
@@ -6722,7 +6723,7 @@ a.text-theme:hover,
 .main-menu a {
   display: block;
   position: relative;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
   color: var(--title-color);
   font-family: var(--title-font);
@@ -7222,8 +7223,9 @@ a.text-theme:hover,
 }
 
 .header-layout1 .logo-bg:after {
-  background-image: url("../img/theme-img/logo_bg.svg");
-  background-color: var(--white-color);
+  /* background-image: url("../img/theme-img/logo_bg.svg"); */
+  /* background-color: var(--white-color); */
+  background-color: #eeeeee;
   background-repeat: repeat;
   width: calc(100% - 20px);
   -webkit-clip-path: polygon(0 0, calc(100% - 60px) 0%, 100% 100%, 0% 100%);
@@ -17194,7 +17196,7 @@ ul.comment-list .th-comment-item:first-child > .th-post-comment {
 }
 
 .hero-style23 .hero-title {
-  font-size: 88px;
+  font-size: 76px;
   text-transform: capitalize;
   margin-bottom: 10px;
   /* Medium Large devices */
@@ -46616,7 +46618,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .process-card4 {
-  background: #FFFFFF;
+  background: #ffffff;
   padding: 42px;
   border-radius: 16px;
   display: -webkit-box;

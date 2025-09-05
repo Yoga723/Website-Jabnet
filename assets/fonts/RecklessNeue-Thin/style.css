@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Reckless Neue';
+    src: local('Reckless Neue Thin'), local('Reckless-Neue-Thin'),
+        url('RecklessNeue-Thin.woff2') format('woff2'),
+        url('RecklessNeue-Thin.woff') format('woff'),
+        url('RecklessNeue-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }

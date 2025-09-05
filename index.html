@@ -34,15 +34,15 @@
     <meta name="twitter:image" content="/assets/img/Jabnet-Logo.png">
     <meta name="twitter:site" content="@jabnet_id">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QDMSBSFE1L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QDMSBSFE1L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-QDMSBSFE1L');
-</script>
+        gtag('config', 'G-QDMSBSFE1L');
+    </script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -533,10 +533,10 @@ About Area
                     <div class="col-xl-7 mb-30 mb-xl-0 ps-xl-5" data-aos="zoom-out-bottom">
                         <div class="img-box25 me-xl-5 overflow-hidden">
                             <div class="img1 overflow-hidden">
-                                <img loading="lazy" src="assets/img/normal/placeholder/about_23_1.webp" alt="About">
+                                <img loading="lazy" src="/assets/img/normal/placeholder/about_23_1.webp" alt="About">
                             </div>
 
-                            <div class="th-experience2">
+                            <div class="th-experience2 d-none d-md-flex">
                                 <h2 class="experience-year"><span class="">5</span>+</h2>
                                 <p class="experience-text">Years <span>of experience</span></p>
                             </div>
@@ -596,7 +596,8 @@ About Area
                                 </div>
                                 <div class="media-body">
                                     <span class="header-info_label">Panggil Sekarang!</span>
-                                    <p class="header-info_link"><a href="tel:+6282180009030">(+62) - 821 - 8000 - 9030</a>
+                                    <p class="header-info_link"><a href="tel:+6282180009030">(+62) - 821 - 8000 -
+                                            9030</a>
                                     </p>
                                 </div>
                             </div>
@@ -841,8 +842,8 @@ Project Area
                                         <div class="project-content">
                                             <span>Pelatihan</span>
                                             <span>Blog</span>
-                                            <h3 class="box-title"><a target="_blank"
-                                                    href="/projects">Pelatihan MTCNA</a></h3>
+                                            <h3 class="box-title"><a target="_blank" href="/projects">Pelatihan
+                                                    MTCNA</a></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -980,10 +981,10 @@ Contact Area
                                         Whatsapp
                                         <i class="fa-regular fa-arrow-right ms-2"></i></button>
 
-                                    <button type="submit" class="th-btn style-border2 text-black border-black bg-white"
+                                    <!-- <button type="submit" class="th-btn style-border2 text-black border-black bg-white"
                                         name="submit-button" id="submit-button">Kirim Ke
                                         Email
-                                        <i class="fa-regular fa-arrow-right ms-2"></i></button>
+                                        <i class="fa-regular fa-arrow-right ms-2"></i></button> -->
                                 </div>
                             </div>
                             <!-- <p class="form-messages mb-0 mt-3"></p> -->
@@ -1283,11 +1284,14 @@ Faq Area
                                 <div id="collapse-3" class="accordion-collapse collapse "
                                     aria-labelledby="collapse-item-3" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-                                        <p class="faq-text">Mainkan video berikut untuk tutorialnya atau <a
+                                        <p class="faq-text">Mainkan video berikut untuk tutorialnya atau
+                                            
+                                            <a
                                                 href="https://www.youtube.com/shorts/EqI-iaOabpM?si=VWM_zSLgWHu4n1a0"
                                                 target="_blank">Buka di Youtube</a>.
-                                            <iframe width="315" height="560"
-                                                src="https://www.youtube.com/embed/<Shorts_video_code>"
+                                                <br />
+                                            <iframe width="660" height="360"
+                                                src="https://www.youtube.com/embed/EqI-iaOabpM"
                                                 title="YouTube video player" frameborder="0"
                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                 allowfullscreen></iframe>
@@ -1310,10 +1314,9 @@ Faq Area
                                         <p class="faq-text">
                                             <b>Jika</b> putus kontrak sebelum 1 tahun, Pelanggan akan dikenakan biaya
                                             terminasi.
-                                            Untuk info lebih lanjut kunjungi ..... atau hubungi <a
+                                            Untuk info lebih lanjut hubungi <a
                                                 href="https://wa.me/6282180009030" class=""
                                                 target="_blank" />0821-8000-9030</a>
-
                                         </p>
                                     </div>
                                 </div>
@@ -1502,7 +1505,7 @@ Blog Area
     <!-- Whatsapp Form Handler -->
     <script src="assets/js/whatsapp-handler.js"></script>
     <!-- Mekari Qontak Handler -->
-    <script src="assets/js/components/script-qontak.js"></script>
+    <script src="assets/js/components/script-omni.js"></script>
     <!-- Jquery -->
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
     <!-- Swiper Slider -->
