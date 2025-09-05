@@ -21,14 +21,10 @@ const handleFormSubmit = () => {
   let isValid = false;
 
   if (isInquiryForm) {
-    console.log("log input :", phone);
-    console.log("log input :", subjek);
-    console.log("log input :", message);
     isValid = name && isValidEmail && phone && subjek && message;
   } else {
     isValid = name && isValidEmail && phone && paket && address;
   }
-  console.log("STAGE 4 FORM");
 
   if (!isValid) {
     if (formMessages) {
@@ -37,7 +33,6 @@ const handleFormSubmit = () => {
     return;
   }
 
-  console.log("STAGE 5 FORM");
   // --- 4. Build WhatsApp Message ---
   const greetingWithSubject = `Salam hangat, saya melihat *Website JABNET* dan ingin membahas mengenai subjek ${subjek}:\n`;
   const greetingSubscribe = `Salam hangat, saya melihat *Website JABNET* dan tertarik dengan ${paket}:\n`;
@@ -63,10 +58,8 @@ const handleFormSubmit = () => {
   const waLink = isMobile ? "whatsapp://send" : "https://web.whatsapp.com/send";
   const whatsappURL = `${waLink}?phone=${whatsappUtama}&text=${formattedMessage}`;
 
-  console.log("STAGE 7 FORM");
   // --- 6. Open WhatsApp in New Tab ---
   window.open(whatsappURL, "_blank");
-  console.log("STAGE 8 FORM");
 
   // --- 7. Show WhatsApp Success Overlay ---
   const successOverlay = document.getElementById("form-overlay-success-whatsapp");

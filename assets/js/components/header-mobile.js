@@ -1,12 +1,12 @@
 class HeaderMobile extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-       <section class="th-menu-wrapper">
+       <header class="th-menu-wrapper">
         <div class="th-menu-area text-center">
             <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
-                <a class="icon-masking" href="index.html"><span data-mask-src="https://jabnet.id/assets/img/Jabnet-Logo.png" width="158" height="158"
-                        class="mask-icon"></span><img src="https://jabnet.id/assets/img/Jabnet-Logo.png" width="158" height="158" alt="Jabnet"></a>
+                <a class="icon-masking" href="index.html"><span data-mask-src="/assets/img/Jabnet-Logo.png" width="158" height="158"
+                        class="mask-icon"></span><img src="/assets/img/Jabnet-Logo.png" width="158" height="158" alt="Jabnet"></a>
             </div>
 
             <div class="th-mobile-menu">
@@ -35,7 +35,7 @@ class HeaderMobile extends HTMLElement {
                                 </ul>
                             </li> -->
                             <li><a href="team/team.html">Team</a></li>
-                            <li><a href="/projects/project.html">Project</a></li>
+                            <li><a href="/projects">Project</a></li>
                             <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="faq.html">Faq Page</a></li>
                         </ul>
@@ -44,13 +44,13 @@ class HeaderMobile extends HTMLElement {
                         <a href="blog.html">Blog</a>
                     </li>
                     <li>
-                        <a href="kontak.html">Kontak Kami</a>
+                        <a href="/kontak.html">Kontak Kami</a>
                     </li>
                     <li><a href="about.html">Tentang Kami</a></li>
                 </ul>
             </div>
         </div>
-    </section>
+    </header>
     `;
   }
 }

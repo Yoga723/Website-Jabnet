@@ -34,7 +34,7 @@ class Header extends HTMLElement {
                     <div class="row align-items-center justify-content-between">
                         <div class="col-auto">
                             <div class="header-logo">
-                                <a class="icon-masking" href="/index.html"><img src="https://jabnet.id/assets/img/Jabnet-Logo.png" width="144" height="144" alt="Jabnet"></a>
+                                <a class="icon-masking" href="/index.html"><img src="/assets/img/Jabnet-Logo.png" width="144" height="144" alt="Jabnet"></a>
                             </div>
                         </div>
                         <div class="col-auto">
@@ -63,8 +63,8 @@ class Header extends HTMLElement {
                                                     <li><a href="/checkout.html">Checkout</a></li>
                                                 </ul>
                                             </li> -->
-                                            <li><a href="/team/team.html">Team</a></li>
-                                           <li><a href="/projects/project.html">Project</a></li>
+                                            <li><a href="/team">Team</a></li>
+                                           <li><a href="/projects">Project</a></li>
                                            <li><a href="/faq.html">Faq Page</a></li>
                                            <li><a href="/syarat-ketentuan.html">Syarat & Ketentuan</a></li>
                                            <!-- <li><a href="/faq.html">Kebijakan Privasi</a></li> -->

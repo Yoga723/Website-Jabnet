@@ -8,7 +8,7 @@ class Footer extends HTMLElement {
                 <div class="row align-items-center">
                     <div class="col-xl-3">
                         <div class="footer-logo">
-                            <a class="icon-masking" href="../index.html"><img src="https://jabnet.id/assets/img/jabnet-logo-dark.webp"
+                            <a class="icon-masking" href="../index.html"><img src="/assets/img/jabnet-logo-dark.webp"
                                     height="194" width="194" alt="Jabnet"></a>
                         </div>
                     </div>
@@ -20,7 +20,7 @@ class Footer extends HTMLElement {
                                 </div>
                                 <div class="media-body">
                                     <span class="footer-contact_text">Hubungi Kami:</span>
-                                    <a href="https://wa.me/6282180009030" class="footer-contact_link">0821-8000-9030</a>
+                                    <a href="tel:+6282180009030" class="footer-contact_link">0821-8000-9030</a>
                                 </div>
                             </div>
                             <div class="footer-contact">
@@ -77,11 +77,11 @@ class Footer extends HTMLElement {
                             <h3 class="widget_title">Quick Links</h3>
                             <div class="menu-all-pages-container">
                                 <ul class=" ">
-                                    <li><a href="../about.html" target="_blank">Tentang Kami</a></li>
-                                    <li><a href="../team/team.html" target="_blank">Tim JABNET</a></li>
-                                    <li><a href="../project.html" target="_blank">Project JABNET</a></li>
-                                    <li><a href="../faq.html" target="_blank">Bantuan & FAQs</a></li>
-                                    <li><a href="../kontak.html" target="_blank">Kontak Kami</a></li>
+                                    <li><a href="/about.html" target="_blank">Tentang Kami</a></li>
+                                    <li><a href="/team" target="_blank">Tim JABNET</a></li>
+                                    <li><a href="/project.html" target="_blank">Project JABNET</a></li>
+                                    <li><a href="/faq.html" target="_blank">Bantuan & FAQs</a></li>
+                                    <li><a href="/kontak.html" target="_blank">Kontak Kami</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -91,11 +91,11 @@ class Footer extends HTMLElement {
                             <h3 class="widget_title">List Layanan</h3>
                             <div class="menu-all-pages-container">
                                 <ul class="menu">
-                                    <li><a href="../layanan-internet.html">Layanan Jasa Koneksi Internet</a></li>
-                                    <li><a href="../layanan-maintenance.html">Maintenance Service</a></li>
-                                    <li><a href="../layanan-cloud-manage.html">Cloud Management</a></li>
-                                    <li><a href="../layanan-data-center.html">Data Center</a></li>
-                                    <li><a href="../layanan-academy.html">Jab Academy</a></li>
+                                    <li><a href="/layanan/layanan-internet.html">Layanan Jasa Koneksi Internet</a></li>
+                                    <li><a href="/layanan/layanan-maintenance.html">Maintenance Service</a></li>
+                                    <li><a href="/layanan/layanan-cloud-manage.html">Cloud Management</a></li>
+                                    <li><a href="/layanan/layanan-data-center.html">Data Center</a></li>
+                                    <li><a href="/layanan/layanan-academy.html">Jab Academy</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -106,28 +106,28 @@ class Footer extends HTMLElement {
                             <div class="recent-post-wrap">
                                 <div class="recent-post">
                                     <div class="media-img">
-                                        <a href="../blog-krisna-beach-hotel.html" target="_blank"><img loading="lazy" src="/assets/img/blog/1x1/blog-krisna-1x0.8.webp"
+                                        <a href="/blog/blog-krisna-beach-hotel.html" target="_blank"><img loading="lazy" src="/assets/img/blog/1x1/blog-krisna-1x0.8.webp"
                                                 alt="Blog Image"></a>
                                     </div>
                                     <div class="media-body">
                                         <h4 class="post-title"><a class="text-inherit"
-                                                href="../blog-krisna-beach-hotel.html" target="_blank">Pemasangan Internet untuk Krisna Beach Hotel</a>
+                                                href="/blog/blog-krisna-beach-hotel.html" target="_blank">Pemasangan Internet untuk Krisna Beach Hotel</a>
                                         </h4>
                                         <div class="recent-post-meta">
-                                            <a href="../blog-krisna-beach-hotel.html" target="_blank"><i class="fal fa-calendar-days"></i>21 June, 2025</a>
+                                            <a href="/blog/blog-krisna-beach-hotel.html" target="_blank"><i class="fal fa-calendar-days"></i>21 June, 2025</a>
                                         </div>
                                     </div>
                                 </div>
                                 
                                 <div class="recent-post">
                                     <div class="media-img">
-                                        <a href="../blog-pelatihan-mtcna.html" target="_blank"><img loading="lazy" src="/assets/img/blog/1x1/blog-mtcna.webp"
+                                        <a href="/blog/blog-pelatihan-mtcna.html" target="_blank"><img loading="lazy" src="/assets/img/blog/1x1/blog-mtcna.webp"
                                                 alt="Blog Image"></a>
                                     </div>
                                     <div class="media-body">
-                                        <h4 class="post-title"><a class="text-inherit" href="../blog-pelatihan-mtcna.html" target="_blank">Pelatihan MTCNA</a></h4>
+                                        <h4 class="post-title"><a class="text-inherit" href="/blog/blog-pelatihan-mtcna.html" target="_blank">Pelatihan MTCNA</a></h4>
                                         <div class="recent-post-meta">
-                                            <a href="../blog-pelatihan-mtcna.html" target="_blank"><i class="fal fa-calendar-days"></i>22 June, 2025</a>
+                                            <a href="/blog/blog-pelatihan-mtcna.html" target="_blank"><i class="fal fa-calendar-days"></i>22 June, 2025</a>
                                         </div>
                                     </div>
                                 </div>
