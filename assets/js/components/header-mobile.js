@@ -5,8 +5,8 @@ class HeaderMobile extends HTMLElement {
         <div class="th-menu-area text-center">
             <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
-                <a class="icon-masking" href="index.html"><span data-mask-src="/assets/img/Jabnet-Logo.png" width="158" height="158"
-                        class="mask-icon"></span><img src="/assets/img/Jabnet-Logo.png" width="158" height="158" alt="Jabnet"></a>
+                <a class="icon-masking" href="index.html"><span data-mask-src="/assets/img/JABNET-LOGO-BLACK-ORANGE-NEW.webp" width="158" height="158"
+                        class="mask-icon"></span><img src="/assets/img/JABNET-LOGO-BLACK-ORANGE-NEW.webp" width="158" height="158" alt="Jabnet"></a>
             </div>
 
             <div class="th-mobile-menu">

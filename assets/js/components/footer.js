@@ -8,7 +8,7 @@ class Footer extends HTMLElement {
                 <div class="row align-items-center">
                     <div class="col-xl-3">
                         <div class="footer-logo">
-                            <a class="icon-masking" href="../index.html"><img src="/assets/img/jabnet-Logo-white.webp"
+                            <a class="icon-masking" href="../index.html"><img src="/assets/img/JABNET-LOGO-WHITE-ORANGE-NEW.webp"
                                     height="194" width="194" alt="Jabnet"></a>
                         </div>
                     </div>

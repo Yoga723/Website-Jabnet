@@ -47,7 +47,7 @@ const jabnetIcon = L.divIcon({
                   <path d="M12 0C5.373 0 0 5.373 0 12c0 7.875 12 26.4 12 26.4s12-18.525 12-26.4C24 5.373 18.627 0 12 0z" fill="#f37021"/>
                 </svg>
                 <!-- Logo Jabnet ditempatkan di atas pin -->
-                <img src="/assets/img/Jabnet-Logo.png" class="jabnet-logo-on-pin w-75 h-50" alt="Logo Jabnet">
+                <img src="/assets/img/JABNET-LOGO-BLACK-ORANGE-NEW.webp" class="jabnet-logo-on-pin w-75 h-50" alt="Logo Jabnet">
               </div>
             `,
   className: "",

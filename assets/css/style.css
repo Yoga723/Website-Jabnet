@@ -85,6 +85,17 @@ Version: 1.0.0
 @use "sass:math";
 /*------------------- 1.2. Function -------------------*/
 /*------------------- 1.3. Variable-------------------*/
+
+@font-face {
+  font-family: "RecklessNeue";
+  src: url("/assets/fonts/fontawesome/RecklessNeue-Light.woff2") format("woff2"),
+       url("/assets/fonts/fontawesome/RecklessNeue-Light.woff") format("woff"),
+       url("/assets/fonts/fontawesome/RecklessNeue-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --theme-color: #F37021;       
   --theme-color2: #D85D13;       
@@ -103,8 +114,8 @@ Version: 1.0.0
   --success-color: #00BFA6;      
   --error-color: #F44336;        
   --th-border-color: #DDDDDD;     
-  --title-font: url('/assets/fonts/fontawesome/RecklessNeue-Light.ttf') format('ttf') sans-serif;
-  --body-font: url('/assets/fonts/fontawesome/RecklessNeue-Light.ttf') format('ttf') sans-serif;
+  --title-font: "RecklessNeue", sans-serif;
+  --body-font: "RecklessNeue", sans-serif;
   --icon-font: "Font Awesome 6 Pro";
   --main-container: 1220px;
   --container-gutters: 24px;

@@ -34,7 +34,7 @@ class Header extends HTMLElement {
                     <div class="row align-items-center justify-content-between">
                         <div class="col-auto">
                             <div class="header-logo">
-                                <a class="icon-masking" href="/index.html"><img src="/assets/img/Jabnet-Logo.png" width="144" height="144" alt="Jabnet"></a>
+                                <a class="icon-masking" href="/index.html"><img src="/assets/img/JABNET-LOGO-BLACK-ORANGE-NEW.webp" width="144" height="144" alt="Jabnet"></a>
                             </div>
                         </div>
                         <div class="col-auto">
